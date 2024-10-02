@@ -49,16 +49,6 @@ class _FadingTextAnimationState extends State<FadingTextAnimation> {
                 _currentSliderValue = value;
               });
             },
-          ),
-          AnimatedContainer(
-            height: 200,
-            curve: Curves.bounceIn,
-            duration: const Duration(milliseconds: 200),
-            child: AnimatedOpacity(
-              opacity: _currentSliderValue,
-              duration: Duration(seconds: 0),
-              child: myImage,
-            ),
           )
         ],
       ),
